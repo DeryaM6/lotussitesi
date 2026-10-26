@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Sitesi</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d3054; 
+            color: #88abda;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background: linear-gradient(135deg, #50778a, #a5b4ba);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 10px rgba(34, 95, 126, 0.2);
+        }
+
+        header h1 {
+            margin: 0 0 8px 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
+
+        
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        
+        .card-section {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 16px;
+            border: 2px dashed #3e728e; 
+            box-shadow: 0 4px 15px rgba(56, 189, 248, 0.1);
+        }
+
+        h2 {
+            color: #02293e;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 0;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e0f2fe;
+            padding-bottom: 8px;
+        }
+
+        
+        .about-text {
+            font-size: 1.05rem;
+            color: #415f89;
+            margin: 0;
+        }
+
+        
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #08425f;
+            color: white;
+            padding: 12px;
+            font-weight: 600;
+        }
+
+        th:first-child {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e0f2fe;
+            color: #2e5a9b;
+        }
+
+        tr:hover td {
+            background-color: #f0f9ff;
+        }
+
+        code {
+            background-color: #214b67;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #9eb6c3;
+            font-family: monospace;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #b5d0dd;
+            color: white;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <h1>Kişisel Web Siteme Hoş Geldiniz </h1>
+        <p></p>
+    </header>
+
+    <main>
+        
+        <section class="card-section">
+            <h2> Hakkımda</h2>
+            <p class="about-text">
+                Merhaba! Ben Derya Meryem Bahçekapılı Bilgisayar mühendisliği öğrencisiyim. 
+            </p>
+        </section>
+
+        
+        <section class="card-section">
+            <h2>🌐 DNS Kayıtlarım</h2>
+            <p style="color: #021e46; font-size: 0.95rem; margin-top: 0;">Proje kapsamında yapılandırılan temel DNS kayıt türleri ve kullanım amaçları:</p>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tür</th>
+                            <th>Ad</th>
+                            <th>Değer / Hedef</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>NS</strong></td>
+                            <td><code>@</code></td>
+                            <td><code></code>ns1.hostingfirmasi</code></td>
+                        </tr>
+                        <tr>
+                            <td><strong>A</strong></td>
+                            <td><code>@</code></td>
+                            <td><code>192.168.1.50</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>CNAME</code></td>
+                            <td><code>www</code></td>
+                            <td>lotussitesi.com</td>
+                        </tr>
+                        <tr>
+                            <td><strong>MX</strong></td>
+                            <td><code>@</code></td>
+                            <td>mail.lotussitesi.com</td>
+                        </tr>m
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    >
+    <footer>
+        <p>&copy; 2026 - Kişisel Web Sitesi &bull; Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
